@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./styles/blog.css"
 
 export const pageQuery = graphql`
   query blog {
@@ -26,20 +27,25 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Blog</h1>
-      <ul>
-        {posts.map(({ node: post }) => (
-          <li key={post.id}>
-            <Link to={post.frontmatter.slug}>
-              <article>
-                <h2>{post.frontmatter.title}</h2>
-                <span>{post.frontmatter.date}</span>
-                <p>{post.excerpt}</p>
-              </article>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="blog">
+        <h1>Blog</h1>
+        <ul>
+          {posts.map(({ node: post }) => (
+            <li key={post.id}>
+              <Link to={post.frontmatter.slug}>
+                <article>
+                  <h2>
+                    {post.frontmatter.title}{" "}
+                    <span>{post.frontmatter.date}</span>
+                  </h2>
+
+                  <p>{post.excerpt}</p>
+                </article>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Layout>
   )
 }

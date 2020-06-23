@@ -1,0 +1,9 @@
+.post {
+  min-height: 82vh;
+  background-color: #fefefe;
+  color: #232323;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.75);
+}

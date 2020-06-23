@@ -1,0 +1,38 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+}
+
+.card {
+  background-color: #fefefe;
+  color: #232323;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.75);
+  transition: all 0.1s linear;
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+  transition: box-shadow 0.1s linear;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px rgba(3, 3, 3, 0.75);
+}
+
+.site {
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-text {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 20px 20px;
+  margin-bottom: 0;
+}
+
+.card-text:hover {
+  box-shadow: none;
+}

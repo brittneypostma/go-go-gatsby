@@ -1,0 +1,28 @@
+.home {
+  text-align: center;
+  min-height: 82vh;
+  max-width: 100vw;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.home > h1 {
+  font-size: 67.34px;
+  margin: 0;
+}
+
+.home > p {
+  font-size: 50.52px;
+}
+
+.home > span {
+  font-size: 28.43px;
+}
+
+.home > h1,
+.home > p,
+.home > span {
+  text-shadow: 0px 4px 8px rgba(3, 3, 3, 0.75);
+}

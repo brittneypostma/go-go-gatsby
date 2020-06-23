@@ -1,13 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./styles/index.css"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
-    <Link to="/blog/">Blog</Link> <br />
+    <div className="home">
+      <h1>Gatsby Developer</h1>
+      <p>Wowsers!</p>
+      <span>A go-go Gatsby blog.</span>
+    </div>
   </Layout>
 )
 
