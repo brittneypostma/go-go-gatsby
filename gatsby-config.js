@@ -32,13 +32,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/src/posts`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          posts: require.resolve("./src/components/posts-layout.js"),
+          default: require.resolve("./src/components/layout.js"),
+        },
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
