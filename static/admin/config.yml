@@ -23,8 +23,8 @@ collections:
           name: "date",
           widget: "datetime",
           timeFormat: false,
-          dateFormat: "MMMM-DD-YYYY",
-          format: "MMMM DD, YYYY",
+          dateFormat: "MM-DD-YYYY",
+          format: "MM-DD-YYYY",
         }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
