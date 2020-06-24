@@ -13,6 +13,7 @@ article:hover {
 }
 
 article > h2 {
+  color: #633294;
   border-bottom: 1px solid #232323;
   padding-bottom: 1px;
   display: flex;
@@ -22,4 +23,5 @@ article > h2 {
 
 article > h2 > span {
   font-size: 16px;
+  color: #633294;
 }

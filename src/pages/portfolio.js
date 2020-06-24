@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import robofriends from "../images/robofriends.png"
@@ -17,7 +16,7 @@ const Portfolio = ({ data }) => {
             <a
               href="https://brittneypostma.github.io/robofriends-hooks-rtk/"
               target="_blank"
-              rel="noopener noreffer"
+              rel="noopener noreferrer"
             >
               <img src={robofriends} alt="Robofriends Site" className="site" />
               <div className="site-content">
@@ -32,7 +31,7 @@ const Portfolio = ({ data }) => {
             <a
               href="https://brittneypostma.github.io/robofriends-hooks-rtk/"
               target="_blank"
-              rel="noopener noreffer"
+              rel="noopener noreferrer"
             >
               <div className="site-content">
                 <img src={shop} alt="Sticker Shop" className="site" />
