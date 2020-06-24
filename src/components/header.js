@@ -7,7 +7,7 @@ import "./styles/header.css"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="header-wrapper">
-      <h1 class="title">
+      <h1 className="title">
         <Link to="/">
           <img src={logo} alt="logo" />
           {siteTitle}

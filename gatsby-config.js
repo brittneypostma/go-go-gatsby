@@ -8,6 +8,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-netlify-cms`,
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -36,13 +39,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-        defaultLayouts: {
-          posts: require.resolve("./src/components/posts-layout.js"),
-          default: require.resolve("./src/components/layout.js"),
-        },
-      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
