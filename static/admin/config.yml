@@ -24,7 +24,7 @@ collections:
           widget: "datetime",
           timeFormat: false,
           dateFormat: "MMMM-DD-YYYY",
-          format: "MMMM-DD-YYYY",
+          format: "MMMM DD, YYYY",
         }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
