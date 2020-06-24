@@ -2,6 +2,8 @@ import React from "react"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import robofriends from "../images/robofriends.png"
+import shop from "../images/sticker-shop.png"
 import "./styles/portfolio.css"
 
 const Portfolio = ({ data }) => {
@@ -17,15 +19,26 @@ const Portfolio = ({ data }) => {
               target="_blank"
               rel="noopener noreffer"
             >
-              <Img
-                fixed={data.file.childImageSharp.fixed}
-                alt="Robofriends Site"
-                className="site"
-              />
-              <article className="card-text">
-                <h2>Robofriends</h2>
-                <p>A searchable listing of all your friendly robofriends!</p>
-              </article>
+              <img src={robofriends} alt="Robofriends Site" className="site" />
+              <div className="site-content">
+                <h2 className="site-title">Robofriends</h2>
+                <p className="site-desc">
+                  A searchable listing of all your friendly robots!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="card">
+            <a
+              href="https://brittneypostma.github.io/robofriends-hooks-rtk/"
+              target="_blank"
+              rel="noopener noreffer"
+            >
+              <div className="site-content">
+                <img src={shop} alt="Sticker Shop" className="site" />
+                <h2 className="site-title">Sticker Shop</h2>
+                <p className="site-desc">A site to buy stickers!</p>
+              </div>
             </a>
           </div>
         </div>
@@ -35,17 +48,3 @@ const Portfolio = ({ data }) => {
 }
 
 export default Portfolio
-
-export const query = graphql`
-  query Image {
-    file(relativePath: { eq: "robofriends.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`

@@ -1,17 +1,19 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 450px));
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.card {
+.card > a {
+  min-height: 575px;
   background-color: #fefefe;
   color: #232323;
-  margin-bottom: 20px;
-  border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.75);
   transition: all 0.1s linear;
   display: grid;
-  justify-content: center;
   overflow: hidden;
   transition: box-shadow 0.1s linear;
 }
@@ -20,19 +22,15 @@
   box-shadow: 0px 10px 20px rgba(3, 3, 3, 0.75);
 }
 
-.site {
-  width: 300px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.card-text {
-  border-radius: 0;
-  box-shadow: none;
+.site-content {
   padding: 0 20px 20px;
-  margin-bottom: 0;
 }
 
-.card-text:hover {
-  box-shadow: none;
+.site-title {
+  color: #633294;
+  font-size: 50.52px;
+}
+
+.site-desc {
+  font-size: 28.43px;
 }
