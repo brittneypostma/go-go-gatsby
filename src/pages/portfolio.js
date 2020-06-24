@@ -29,7 +29,7 @@ const Portfolio = ({ data }) => {
           </div>
           <div className="card">
             <a
-              href="https://brittneypostma.github.io/robofriends-hooks-rtk/"
+              href="https://serverless-sticker-shop.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
