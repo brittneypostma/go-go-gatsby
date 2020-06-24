@@ -10,10 +10,10 @@ collections:
     label: "Blog"
     folder: "src/posts"
     create: true
-    slug: "index"
+    slug: "{{slug}}"
     media_folder: ""
     public_folder: ""
-    path: "index"
+    path: "{{slug}}"
     editor:
       preview: false
     fields:
@@ -23,7 +23,7 @@ collections:
           name: "date",
           widget: "datetime",
           dateFormat: "MMMM-DD-YYYY",
-          timeFormal: "",
+          timeFormal: false,
         }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
