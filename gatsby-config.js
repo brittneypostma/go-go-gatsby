@@ -42,8 +42,24 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`tailwindcss`), require(`autoprefixer`)],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `poppins`,
+          `roboto\:100,300,400,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

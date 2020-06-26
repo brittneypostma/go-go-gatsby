@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import robofriends from "../images/robofriends.png"
 import shop from "../images/sticker-shop.png"
-import "./styles/portfolio.css"
 
 const Portfolio = ({ data }) => {
   return (
@@ -11,7 +10,7 @@ const Portfolio = ({ data }) => {
       <SEO title="Portfolio" />
       <div className="portfolio">
         <h1>Portfolio</h1>
-        <div className="cards">
+        <div className="min-h-full p-8 flex items-center justify-center">
           <div className="card">
             <a
               href="https://brittneypostma.github.io/robofriends-hooks-rtk/"

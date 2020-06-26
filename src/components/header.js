@@ -2,41 +2,42 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.svg"
-import "./styles/header.css"
+
+const links = `hover:text-light-purple transition-colors duration-75 ease-linear ml-5`
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <div className="header-wrapper">
-      <h1 className="title">
-        <Link to="/">
-          <img src={logo} alt="logo" />
+  <header className="theme bg-black text-white">
+    <div className="max-w-max mx-auto p-5 flex items-center justify-between">
+      <h1>
+        <Link to="/" className="flex items-center text-3xl font-medium">
+          <img src={logo} alt="logo" className="mr-5" />
           {siteTitle}
         </Link>
       </h1>
-      <nav>
-        <ul>
+      <nav className="flex items-center">
+        <ul className="flex">
           <li>
-            <Link to="/" className="header-links">
+            <Link to="/" className={links}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/blog" className="header-links">
+            <Link to="/blog" className={links}>
               Blog
             </Link>
           </li>
           <li>
-            <Link to="/about" className="header-links">
+            <Link to="/about" className={links}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" className="header-links">
+            <Link to="/portfolio" className={links}>
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="header-links">
+            <Link to="/contact" className={links}>
               Contact
             </Link>
           </li>

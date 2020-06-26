@@ -1,0 +1,51 @@
+/*! TAILWIND IMPORTS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*! CUSTOM CSS */
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #633294 0%, #340f57 100%);
+}
+
+/* SCROLLBARS */
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 13px;
+  background: linear-gradient(to top, #340f57 0%, #633294 100%);
+  border-left: 2px solid #232323;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #340f57;
+}
+
+* {
+  scrollbar-color: #633294 #232323;
+}
