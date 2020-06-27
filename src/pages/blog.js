@@ -44,7 +44,7 @@ const Blog = ({ data }) => {
                   <img
                     src={post.frontmatter.image}
                     alt={post.frontmatter.name}
-                    className="h-64 w-full rounded-t pb-6"
+                    className="h-64 w-full rounded-t pb-6 object-center object-cover"
                   />
                   <article>
                     <p className="w-full text-gray-600 text-xs md:text-sm px-6">
