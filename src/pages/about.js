@@ -20,11 +20,11 @@ const About = () => (
         </h2>
         <p>I love building sites in React and GatsbyJS.</p>
         <p>
-          <Link to="/portfolio" class="about-links">
+          <Link to="/portfolio" className="text-teal">
             See my work
           </Link>{" "}
           or{" "}
-          <Link to="/contact" class="about-links">
+          <Link to="/contact" className="text-teal">
             Contact me
           </Link>{" "}
           today.
