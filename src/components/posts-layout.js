@@ -13,7 +13,9 @@ export default function PageTemplate({ data: { mdx } }) {
     <Layout>
       <SEO title={mdx.frontmatter.title} />
       <div className="mb-12 shadow-2xl bg-white max-w-max mx-auto font-sans font-medium p-8 sm:mt-0 lg:mt-6">
-        <h1 className="mb-4 text-4xl text-black">{mdx.frontmatter.title}</h1>
+        <h1 className="mb-4 text-4xl text-black text-left">
+          {mdx.frontmatter.title}
+        </h1>
         <hr />
         <p className="text-lg font-light py-2">
           Posted on {mdx.frontmatter.date}
