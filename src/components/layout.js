@@ -23,12 +23,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="bg-gradient min-h-screen font-poppins">
+    <div className="bg-gradient min-h-screen font-poppins text-white">
       <div className="flex-1 min-h-screen">
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="max-w-max mx-auto p-5">{children}</main>
+        <main className="max-w-max mx-auto min-h-full text-black">
+          {children}
+        </main>
       </div>
-      <footer className="max-w-max mx-auto p-5 text-white flex-shrink-0 flex items-end justify-center ">
+      <footer className="max-w-max mx-auto flex-shrink-0 flex items-end justify-center ">
         © {new Date().getFullYear()}, Built with&nbsp;
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>

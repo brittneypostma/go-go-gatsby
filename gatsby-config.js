@@ -43,12 +43,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require(`tailwindcss`), require(`autoprefixer`)],
-      },
-    },
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

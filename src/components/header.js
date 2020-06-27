@@ -6,8 +6,8 @@ import logo from "../images/logo.svg"
 const links = `hover:text-light-purple transition-colors duration-75 ease-linear ml-5`
 
 const Header = ({ siteTitle }) => (
-  <header className="theme bg-black text-white">
-    <div className="max-w-max mx-auto p-5 flex items-center justify-between">
+  <header className="theme bg-black text-white mb-6">
+    <div className="max-w-max mx-auto py-5 flex items-center justify-between">
       <h1>
         <Link to="/" className="flex items-center text-3xl font-medium">
           <img src={logo} alt="logo" className="mr-5" />
