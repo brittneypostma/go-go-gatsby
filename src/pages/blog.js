@@ -36,7 +36,7 @@ const Blog = ({ data }) => {
               key={post.id}
               className="flex justify-center max-w-full mb-10 mx-10"
             >
-              <div className="bg-white w-100 h-125 rounded-t rounded-b-none overflow-hidden flex flex-col flex-grow flex-shrink shadow-lg hover:shadow-2xl">
+              <div className="bg-white w-100 rounded-t rounded-b-none overflow-hidden flex flex-col flex-grow flex-shrink shadow-lg hover:shadow-2xl">
                 <Link
                   to={post.frontmatter.slug}
                   className="flex flex-wrap no-underline hover:no-underline"
