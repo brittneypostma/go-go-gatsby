@@ -1,8 +1,4 @@
 import React from "react"
-import facebook from "../images/facebook.svg"
-import twitter from "../images/twitter.svg"
-import insta from "../images/insta.svg"
-
 const socials = `ml-2 w-10`
 const icon = `icon shadow-lg hover:shadow-sm`
 

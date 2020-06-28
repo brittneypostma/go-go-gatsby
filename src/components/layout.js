@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="bg-gradient min-h-screen font-poppins text-white">
-      <div className="flex-1 min-h-screen">
+      <div className="flex-1 min-h-screen pb-10">
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="min-h-full text-black">{children}</main>
       </div>
