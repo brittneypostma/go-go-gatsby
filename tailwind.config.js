@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     //! anything here overrides tailwinds defaults //
     colors: {
-      black: " #232323",
+      black: "#232323",
+      "dark-black": "#000000",
       white: "#efefef",
       "light-teal": "#11d3cf",
       teal: "#0ea9a6",
@@ -30,6 +31,7 @@ module.exports = {
         96: "24rem",
         100: "25rem",
         125: "32rem",
+        180: "45rem",
       },
       width: {
         80: "20rem",

@@ -36,8 +36,8 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "npm run build:css",
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
-    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css -w",
+    "build:css": "tailwind build tailwind.css -o src/styles/main.css",
+    "watch:css": "tailwind.css -o src/styles/main.css -w",
     "build": "npm run build:css && gatsby build",
     "develop": "npm run watch:css & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",

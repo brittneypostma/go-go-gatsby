@@ -46,6 +46,10 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.icon:hover > path {
+  fill: #0ea9a6;
+}
+
 .text-shadow {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
