@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => {
           </button>
           <nav
             className={
-              "absolute lg:flex flex-grow items-center" +
+              "absolute lg:flex flex-grow items-center self-center" +
               (navbarOpen ? "grid" : " hidden")
             }
           >
