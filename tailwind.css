@@ -24,6 +24,11 @@ h1 {
   color: #fefefe;
 }
 
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px #11d3cf;
+}
+
 .bg-gradient {
   background: linear-gradient(to right, #633294 0%, #340f57 100%);
 }
