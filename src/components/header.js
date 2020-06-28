@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="theme text-white mb-6 relative z-10">
       <div className="w-full p-5 flex items-center justify-between">
-        <div className="w-1/2">
+        <div className="w-full">
           <h1>
             <Link to="/" className="flex items-center text-3xl font-medium">
               <img src={logo} alt="logo" className="mr-5" />
