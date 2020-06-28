@@ -36,7 +36,7 @@ const Blog = ({ data }) => {
               key={post.id}
               className="flex justify-center max-w-full mb-10 mx-10"
             >
-              <div className="bg-white w-100 overflow-hidden flex flex-col flex-grow flex-shrink shadow-lg hover:shadow-2xl">
+              <div className="card">
                 <Link
                   to={post.frontmatter.slug}
                   className="flex flex-wrap no-underline hover:no-underline"
@@ -44,16 +44,16 @@ const Blog = ({ data }) => {
                   <img
                     src={post.frontmatter.image}
                     alt={post.frontmatter.name}
-                    className="h-64 w-full pb-6 object-center object-cover"
+                    className="h-64 w-full object-center object-cover shadow-md"
                   />
-                  <article>
-                    <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+                  <article className="p-6">
+                    <p className="w-full text-gray-600 text-xs md:text-sm">
                       {post.frontmatter.date}
                     </p>
-                    <h2 className="w-full font-bold text-xl text-gray-900 px-6 flex">
+                    <h2 className="w-full font-bold text-xl text-dark-purple">
                       {post.frontmatter.title}
                     </h2>
-                    <p className="text-gray-800 font-serif text-base px-6 mb-5">
+                    <p className="text-gray-800 font-serif text-base">
                       {post.excerpt}
                     </p>
                   </article>
