@@ -3,12 +3,11 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 import logo from "../images/logo.svg"
 
-const links = `font-bold hover:text-dark-purple lg:hover:text-light-teal transition-colors duration-75 ease-linear ml-5`
+const links = `font-bold hover:text-dark-purple lg:hover:text-light-teal ml-5`
 const menu = `grid h-1 w-10 relative mb-2 bg-light-teal rounded z-10`
 
 const Header = ({ siteTitle }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  // const handleToggle = () => (setNavbarOpen = !setNavbarOpen)
   return (
     <header className="theme text-white mb-6 relative z-10">
       <div className="w-full p-5 flex items-center justify-between">
@@ -21,26 +20,24 @@ const Header = ({ siteTitle }) => {
           </h1>
         </div>
 
-        <div className="w-1/2 flex justify-end">
+        <div className="w-full flex justify-end pt-0 lg:pt-6">
           <button
             className="z-10 -mt-3 absolute text-white cursor-pointer text-xl leading-none rounded bg-transparent  block lg:hidden outline-none focus:outline-none"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
-            <div className="flex items-center justify-end">
-              <div>
-                <span className={menu}></span>
-                <span className="grid h-1 w-8 relative mb-2 bg-light-teal rounded z-10"></span>
-                <span className={menu}></span>
-              </div>
+            <div>
+              <span className={menu}></span>
+              <span className="grid h-1 w-8 relative mb-2 bg-light-teal rounded z-10"></span>
+              <span className={menu}></span>
             </div>
           </button>
           <nav
             className={
-              "absolute lg:flex flex-grow items-center self-center" +
+              "absolute lg:flex flex-grow items-center self-end" +
               (navbarOpen ? "grid" : " hidden")
             }
           >
-            <ul className="grid lg:flex items-center self-center mt-6 bg-light-teal lg:bg-opacity-0 py-5 pr-5 lg:p-0">
+            <ul className="grid lg:flex items-center mt-6 bg-light-teal lg:bg-opacity-0 py-5 pr-5 lg:p-0">
               <li>
                 <Link to="/" className={links}>
                   Home

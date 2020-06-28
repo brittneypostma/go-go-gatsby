@@ -5,7 +5,7 @@ const icon = `icon shadow-lg hover:shadow-sm`
 const Footer = () => {
   return (
     <footer className="flex-shrink-0 flex items-end justify-between relative z-10 p-5">
-      <div className="hidden md:flex w-1/2">
+      <div className="hidden md:flex w-full">
         © {new Date().getFullYear()}, Built by Gatsby Developer
       </div>
       <div className="w-full flex justify-center md:justify-end ml-5">
