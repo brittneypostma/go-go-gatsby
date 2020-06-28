@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const textLinks = `text-teal text-shadow hover:shadow-sm hover:text-dark-teal`
+
 const About = () => (
   <Layout>
     <SEO title="About" />
@@ -20,14 +22,13 @@ const About = () => (
         </h2>
         <p>I love building sites in React and GatsbyJS.</p>
         <p>
-          <Link to="/portfolio" className="text-teal">
+          <Link to="/portfolio" className={textLinks}>
             See my work
           </Link>{" "}
           or{" "}
-          <Link to="/contact" className="text-teal">
+          <Link to="/contact" className={textLinks}>
             Contact me
-          </Link>{" "}
-          today.
+          </Link>
         </p>
       </div>
     </div>
