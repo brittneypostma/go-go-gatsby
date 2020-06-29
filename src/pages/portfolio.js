@@ -16,11 +16,13 @@ const Portfolio = ({ data }) => {
             src={robofriends}
             name="Robofriends"
             desc="A searchable listing of all your friendly robots!"
+            url="https://brittneypostma.github.io/robofriends-hooks-rtk/"
           />
           <SiteCard
             src={shop}
             name="Sticker Shop"
             desc="A site to buy stickers!"
+            url="https://serverless-sticker-shop.netlify.app/"
           />
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from "react"
 
-const SiteCard = ({ src, name, desc }) => {
+const SiteCard = ({ src, name, desc, url }) => {
   return (
     <div className="flex justify-center max-w-full mb-10 mx-10">
       <div className="card">
         <a
           className="flex flex-wrap no-underline hover:no-underline"
-          href="https://brittneypostma.github.io/robofriends-hooks-rtk/"
+          href={url}
           target="_blank"
           rel="noopener noreferrer"
         >

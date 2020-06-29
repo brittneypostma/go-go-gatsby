@@ -9,7 +9,7 @@ const Footer = () => {
         © {new Date().getFullYear()}, Built by Gatsby Developer
       </div>
       <div className="w-full flex justify-center md:justify-end ml-5">
-        <a href="facebook.com" className={socials}>
+        <a href="https://www.facebook.com/" className={socials}>
           <svg
             className={icon}
             width="35"
@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a href="twitter.com" className={socials}>
+        <a href="https://twitter.com/" className={socials}>
           <svg
             className={icon}
             width="35"
@@ -41,7 +41,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a href="instagram.com" className={socials}>
+        <a href="https://www.instagram.com/" className={socials}>
           <svg
             className={icon}
             width="35"
