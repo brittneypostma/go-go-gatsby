@@ -5,7 +5,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "./layout"
 import SEO from "./seo"
-import "./styles/posts-layout.css"
 
 const shortcodes = { Link } // Provide common components here
 
@@ -13,11 +12,20 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
-      <div className="post">
-        <h1>{mdx.frontmatter.title}</h1>
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
+      <div className="mb-12 shadow-2xl bg-white max-w-max mx-auto font-sans font-medium p-8 sm:mt-0 lg:mt-6">
+        <h1 className="mb-4 text-4xl text-black text-left">
+          {mdx.frontmatter.title}
+        </h1>
+        <hr />
+        <p className="text-lg font-light py-2">
+          Posted on {mdx.frontmatter.date}
+        </p>
+        <hr />
+        <div className="max-w-max mx-auto h-full bg-white w-full mt-4 text-xl md:text-2xl text-black leading-normal">
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </MDXProvider>
+        </div>
       </div>
     </Layout>
   )
@@ -29,6 +37,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        date
       }
     }
   }
